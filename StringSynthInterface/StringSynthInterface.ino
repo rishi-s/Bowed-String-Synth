@@ -27,12 +27,12 @@ void loop() {
     if (currentState[i-2] == HIGH) wasPressed[i-2] = false;
   }
   currentState[7] = digitalRead(9);
-  if (!wasPressed[7] && currentState[7] == LOW) { //if the state of the pin changed
-    Serial.write(cmd[7]); //send the data
+  if (!wasPressed[7] && currentState[7] == HIGH) { //if the state of the pin changed
+    Serial.write(cmd[8]); //send the data
     wasPressed[7] = true;//update the last button state
   }
-  if (wasPressed[7] && currentState[7] == HIGH) { //if the state of the pin changed
-    Serial.write(cmd[8]); //send the data
+  if (wasPressed[7] && currentState[7] == LOW) { //if the state of the pin changed
+    Serial.write(cmd[7]); //send the data
     wasPressed[7] = false;//update the last button state
   }
   currentState[8]= digitalRead(10);
