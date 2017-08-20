@@ -11,6 +11,7 @@ void setup() {
     wasPressed[i - 2] = false;
     currentState[i - 2] = false;
   }
+  if (digitalRead(9)==LOW) wasPressed[7]=true;
   pinMode(12, OUTPUT);
   digitalWrite(12, LOW);
   //setup communication
