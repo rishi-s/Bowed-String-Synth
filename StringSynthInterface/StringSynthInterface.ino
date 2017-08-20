@@ -1,6 +1,5 @@
 boolean wasPressed[9];
 int currentState[9];
-int currentValue;
 
 char cmd[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'};
 
@@ -29,11 +28,11 @@ void loop() {
   }
   currentState[7] = digitalRead(9);
   if (!wasPressed[7] && currentState[7] == LOW) { //if the state of the pin changed
-    Serial.write(cmd[8]); //send the data
+    Serial.write(cmd[7]); //send the data
     wasPressed[7] = true;//update the last button state
   }
   if (wasPressed[7] && currentState[7] == HIGH) { //if the state of the pin changed
-    Serial.write(cmd[7]); //send the data
+    Serial.write(cmd[8]); //send the data
     wasPressed[7] = false;//update the last button state
   }
   currentState[8]= digitalRead(10);
