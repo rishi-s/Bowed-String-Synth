@@ -95,21 +95,8 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-2",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 426.0, 247.0, 76.0, 20.0 ],
-									"text" : "delay 10000"
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -118,8 +105,22 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 585.0, 278.0, 100.0, 18.0 ],
-									"text" : "open -a Quit.app"
+									"patching_rect" : [ 585.0, 240.0, 147.0, 18.0 ],
+									"text" : "open -a QuitRunning.app"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 426.0, 240.0, 69.0, 20.0 ],
+									"text" : "delay 2000"
 								}
 
 							}
@@ -142,12 +143,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-11",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 533.5, 63.0, 167.0, 18.0 ],
-									"text" : "osascript ~/Desktop/Quit.scpt"
+									"patching_rect" : [ 453.0, 41.0, 146.0, 31.0 ],
+									"text" : "osascript ~/Desktop/QuitScript.scpt"
 								}
 
 							}
@@ -175,7 +177,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 426.0, 278.0, 56.0, 31.0 ],
+									"patching_rect" : [ 426.0, 309.0, 56.0, 31.0 ],
 									"text" : ";\rmax quit"
 								}
 
@@ -260,7 +262,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 487.0, 278.0, 93.0, 20.0 ],
+									"patching_rect" : [ 487.0, 320.0, 93.0, 20.0 ],
 									"text" : "send Shutdown"
 								}
 
@@ -10191,7 +10193,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 414.75, 119.0, 32.5, 18.0 ],
-									"text" : "0"
+									"text" : "26"
 								}
 
 							}
@@ -10205,7 +10207,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 258.75, 119.0, 32.5, 18.0 ],
-									"text" : "1"
+									"text" : "2"
 								}
 
 							}
